@@ -1,0 +1,18 @@
+<BUTTON TYPE="button" ONCLICK="promptFunction()">Click me!</BUTTON>
+
+<SCRIPT>
+function promptFunction() {
+    var Text = prompt("Write text here:", "");
+if (Text != null) {
+    if (Text != "") {
+        document.getElementById("TextString").innerHTML = "You wrote " + Text + " in the field!";
+    } else {
+        document.getElementById("TextString").innerHTML = "You didn't write anything in the field!";
+    }}
+else {
+        document.getElementById("TextString").innerHTML = "";
+    }
+}
+</SCRIPT>
+
+<DIV ID="TextString"> </DIV>
